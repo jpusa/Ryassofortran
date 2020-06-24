@@ -130,7 +130,7 @@ SUBROUTINE mod5c(theta,time,temp,prec,init,b,d,leac,xt,steadystate_pred)
         tem = 0.0
         temN = 0.0
         temH = 0.0
-        DO i = 1,12 ! Average temperature and precipitation dependence
+        DO i = 1,12 ! Average temperature dependence
             tem = tem+EXP(theta(22)*temp(i)+theta(23)*temp(i)**2.0)
             temN = temN+EXP(theta(24)*temp(i)+theta(25)*temp(i)**2.0)
             temH = temH+EXP(theta(26)*temp(i)+theta(27)*temp(i)**2.0)
